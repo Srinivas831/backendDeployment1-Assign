@@ -9,7 +9,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/users",userRouter);
 app.use("/notes",notesRouter);
-
+app.get("/",(req,res)=>{
+    res.send({message:"Welcome to the API"});
+})
 app.listen(8080,async()=>{
     try{
     await connection;
