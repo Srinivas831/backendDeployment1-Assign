@@ -22,7 +22,7 @@ notesRouter.get("/get",async(req,res)=>{
         res.status(200).send(get);
     }
     catch(err){
-        res.status(400).send("error getting");
+        res.status(400).send("error gettig");
     }
 })
 
